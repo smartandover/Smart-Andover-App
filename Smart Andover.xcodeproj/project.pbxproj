@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		149396F326C53E6400F70883 /* Smart_AndoverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149396F226C53E6400F70883 /* Smart_AndoverApp.swift */; };
+		149396F526C53E6400F70883 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149396F426C53E6400F70883 /* ContentView.swift */; };
+		149396F726C53E6700F70883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 149396F626C53E6700F70883 /* Assets.xcassets */; };
+		149396FA26C53E6700F70883 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 149396F926C53E6700F70883 /* Preview Assets.xcassets */; };
+		1493970526C53E6700F70883 /* Smart_AndoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1493970426C53E6700F70883 /* Smart_AndoverTests.swift */; };
+		1493971026C53E6700F70883 /* Smart_AndoverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1493970F26C53E6700F70883 /* Smart_AndoverUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1493970126C53E6700F70883 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 149396E726C53E6400F70883 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 149396EE26C53E6400F70883;
+			remoteInfo = "Smart Andover";
+		};
+		1493970C26C53E6700F70883 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 149396E726C53E6400F70883 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 149396EE26C53E6400F70883;
+			remoteInfo = "Smart Andover";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		149396EF26C53E6400F70883 /* Smart Andover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Andover.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		149396F226C53E6400F70883 /* Smart_AndoverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_AndoverApp.swift; sourceTree = "<group>"; };
+		149396F426C53E6400F70883 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		149396F626C53E6700F70883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		149396F926C53E6700F70883 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		149396FB26C53E6700F70883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1493970026C53E6700F70883 /* Smart AndoverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart AndoverTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1493970426C53E6700F70883 /* Smart_AndoverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_AndoverTests.swift; sourceTree = "<group>"; };
+		1493970626C53E6700F70883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1493970B26C53E6700F70883 /* Smart AndoverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart AndoverUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1493970F26C53E6700F70883 /* Smart_AndoverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_AndoverUITests.swift; sourceTree = "<group>"; };
+		1493971126C53E6700F70883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		149396EC26C53E6400F70883 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		149396FD26C53E6700F70883 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1493970826C53E6700F70883 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		149396E626C53E6400F70883 = {
+			isa = PBXGroup;
+			children = (
+				149396F126C53E6400F70883 /* Smart Andover */,
+				1493970326C53E6700F70883 /* Smart AndoverTests */,
+				1493970E26C53E6700F70883 /* Smart AndoverUITests */,
+				149396F026C53E6400F70883 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		149396F026C53E6400F70883 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				149396EF26C53E6400F70883 /* Smart Andover.app */,
+				1493970026C53E6700F70883 /* Smart AndoverTests.xctest */,
+				1493970B26C53E6700F70883 /* Smart AndoverUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		149396F126C53E6400F70883 /* Smart Andover */ = {
+			isa = PBXGroup;
+			children = (
+				149396F226C53E6400F70883 /* Smart_AndoverApp.swift */,
+				149396F426C53E6400F70883 /* ContentView.swift */,
+				149396F626C53E6700F70883 /* Assets.xcassets */,
+				149396FB26C53E6700F70883 /* Info.plist */,
+				149396F826C53E6700F70883 /* Preview Content */,
+			);
+			path = "Smart Andover";
+			sourceTree = "<group>";
+		};
+		149396F826C53E6700F70883 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				149396F926C53E6700F70883 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1493970326C53E6700F70883 /* Smart AndoverTests */ = {
+			isa = PBXGroup;
+			children = (
+				1493970426C53E6700F70883 /* Smart_AndoverTests.swift */,
+				1493970626C53E6700F70883 /* Info.plist */,
+			);
+			path = "Smart AndoverTests";
+			sourceTree = "<group>";
+		};
+		1493970E26C53E6700F70883 /* Smart AndoverUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1493970F26C53E6700F70883 /* Smart_AndoverUITests.swift */,
+				1493971126C53E6700F70883 /* Info.plist */,
+			);
+			path = "Smart AndoverUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		149396EE26C53E6400F70883 /* Smart Andover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1493971426C53E6700F70883 /* Build configuration list for PBXNativeTarget "Smart Andover" */;
+			buildPhases = (
+				149396EB26C53E6400F70883 /* Sources */,
+				149396EC26C53E6400F70883 /* Frameworks */,
+				149396ED26C53E6400F70883 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Smart Andover";
+			productName = "Smart Andover";
+			productReference = 149396EF26C53E6400F70883 /* Smart Andover.app */;
+			productType = "com.apple.product-type.application";
+		};
+		149396FF26C53E6700F70883 /* Smart AndoverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1493971726C53E6700F70883 /* Build configuration list for PBXNativeTarget "Smart AndoverTests" */;
+			buildPhases = (
+				149396FC26C53E6700F70883 /* Sources */,
+				149396FD26C53E6700F70883 /* Frameworks */,
+				149396FE26C53E6700F70883 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1493970226C53E6700F70883 /* PBXTargetDependency */,
+			);
+			name = "Smart AndoverTests";
+			productName = "Smart AndoverTests";
+			productReference = 1493970026C53E6700F70883 /* Smart AndoverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1493970A26C53E6700F70883 /* Smart AndoverUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1493971A26C53E6700F70883 /* Build configuration list for PBXNativeTarget "Smart AndoverUITests" */;
+			buildPhases = (
+				1493970726C53E6700F70883 /* Sources */,
+				1493970826C53E6700F70883 /* Frameworks */,
+				1493970926C53E6700F70883 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1493970D26C53E6700F70883 /* PBXTargetDependency */,
+			);
+			name = "Smart AndoverUITests";
+			productName = "Smart AndoverUITests";
+			productReference = 1493970B26C53E6700F70883 /* Smart AndoverUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		149396E726C53E6400F70883 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					149396EE26C53E6400F70883 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					149396FF26C53E6700F70883 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 149396EE26C53E6400F70883;
+					};
+					1493970A26C53E6700F70883 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 149396EE26C53E6400F70883;
+					};
+				};
+			};
+			buildConfigurationList = 149396EA26C53E6400F70883 /* Build configuration list for PBXProject "Smart Andover" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 149396E626C53E6400F70883;
+			productRefGroup = 149396F026C53E6400F70883 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				149396EE26C53E6400F70883 /* Smart Andover */,
+				149396FF26C53E6700F70883 /* Smart AndoverTests */,
+				1493970A26C53E6700F70883 /* Smart AndoverUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		149396ED26C53E6400F70883 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				149396FA26C53E6700F70883 /* Preview Assets.xcassets in Resources */,
+				149396F726C53E6700F70883 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		149396FE26C53E6700F70883 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1493970926C53E6700F70883 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		149396EB26C53E6400F70883 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				149396F526C53E6400F70883 /* ContentView.swift in Sources */,
+				149396F326C53E6400F70883 /* Smart_AndoverApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		149396FC26C53E6700F70883 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1493970526C53E6700F70883 /* Smart_AndoverTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1493970726C53E6700F70883 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1493971026C53E6700F70883 /* Smart_AndoverUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1493970226C53E6700F70883 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 149396EE26C53E6400F70883 /* Smart Andover */;
+			targetProxy = 1493970126C53E6700F70883 /* PBXContainerItemProxy */;
+		};
+		1493970D26C53E6700F70883 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 149396EE26C53E6400F70883 /* Smart Andover */;
+			targetProxy = 1493970C26C53E6700F70883 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1493971226C53E6700F70883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1493971326C53E6700F70883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1493971526C53E6700F70883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Smart Andover/Preview Content\"";
+				DEVELOPMENT_TEAM = K4ZMXMC2TC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Smart Andover/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cezzi.Smart-Andover";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1493971626C53E6700F70883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Smart Andover/Preview Content\"";
+				DEVELOPMENT_TEAM = K4ZMXMC2TC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Smart Andover/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cezzi.Smart-Andover";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1493971826C53E6700F70883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4ZMXMC2TC;
+				INFOPLIST_FILE = "Smart AndoverTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cezzi.Smart-AndoverTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart Andover.app/Smart Andover";
+			};
+			name = Debug;
+		};
+		1493971926C53E6700F70883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4ZMXMC2TC;
+				INFOPLIST_FILE = "Smart AndoverTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cezzi.Smart-AndoverTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart Andover.app/Smart Andover";
+			};
+			name = Release;
+		};
+		1493971B26C53E6700F70883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4ZMXMC2TC;
+				INFOPLIST_FILE = "Smart AndoverUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cezzi.Smart-AndoverUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Smart Andover";
+			};
+			name = Debug;
+		};
+		1493971C26C53E6700F70883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4ZMXMC2TC;
+				INFOPLIST_FILE = "Smart AndoverUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cezzi.Smart-AndoverUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Smart Andover";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		149396EA26C53E6400F70883 /* Build configuration list for PBXProject "Smart Andover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1493971226C53E6700F70883 /* Debug */,
+				1493971326C53E6700F70883 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1493971426C53E6700F70883 /* Build configuration list for PBXNativeTarget "Smart Andover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1493971526C53E6700F70883 /* Debug */,
+				1493971626C53E6700F70883 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1493971726C53E6700F70883 /* Build configuration list for PBXNativeTarget "Smart AndoverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1493971826C53E6700F70883 /* Debug */,
+				1493971926C53E6700F70883 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1493971A26C53E6700F70883 /* Build configuration list for PBXNativeTarget "Smart AndoverUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1493971B26C53E6700F70883 /* Debug */,
+				1493971C26C53E6700F70883 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 149396E726C53E6400F70883 /* Project object */;
+}
