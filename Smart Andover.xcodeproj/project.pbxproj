@@ -3,16 +3,60 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1429E2C426FD4E8400B5F4BC /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429E2C326FD4E8400B5F4BC /* Keychain.swift */; };
+		1429E2C82700329F00B5F4BC /* RequiredField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429E2C72700329F00B5F4BC /* RequiredField.swift */; };
+		142B68DB26E1A21800A465F7 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B68DA26E1A21800A465F7 /* BlurView.swift */; };
+		142B68EA26E3EF0E00A465F7 /* SmartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B68E926E3EF0E00A465F7 /* SmartView.swift */; };
+		142B68EC26E3EF1D00A465F7 /* SmartCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B68EB26E3EF1D00A465F7 /* SmartCard.swift */; };
+		142B68EE26E3EF2A00A465F7 /* SmartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B68ED26E3EF2A00A465F7 /* SmartModel.swift */; };
+		142D42D5270BD33D00DBDCAB /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D42D4270BD33D00DBDCAB /* SideMenuView.swift */; };
+		1431AAF626C9F9340073456F /* FadeScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431AAF526C9F9340073456F /* FadeScrollView.swift */; };
+		1431AAFC26CAD6AB0073456F /* FirstLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431AAFB26CAD6AB0073456F /* FirstLaunch.swift */; };
+		1431AAFE26CAD84E0073456F /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431AAFD26CAD84E0073456F /* Logo.swift */; };
+		1431AB1526D60C4B0073456F /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431AB1426D60C4A0073456F /* LeaderboardView.swift */; };
+		1431AB1726D60D410073456F /* LeaderboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431AB1626D60D410073456F /* LeaderboardItem.swift */; };
+		14368DDB26C847D60017398E /* BubbleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14368DDA26C847D60017398E /* BubbleStyle.swift */; };
+		14368DDD26C84F4B0017398E /* ProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14368DDC26C84F4B0017398E /* ProgressViewStyle.swift */; };
+		145081A026E53BD600B0A4FA /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1450819F26E53BD600B0A4FA /* CurrentUser.swift */; };
+		145081A226E7E7F600B0A4FA /* SmartModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145081A126E7E7F600B0A4FA /* SmartModelData.swift */; };
+		145081A626E8447900B0A4FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 145081A526E8447900B0A4FA /* GoogleService-Info.plist */; };
+		145081A926E84C3C00B0A4FA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145081A826E84C3C00B0A4FA /* LoginView.swift */; };
+		145081AB26E8532300B0A4FA /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145081AA26E8532300B0A4FA /* DatabaseController.swift */; };
+		145081AD26E8598800B0A4FA /* ImageToJPEG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145081AC26E8598800B0A4FA /* ImageToJPEG.swift */; };
+		145A0BE026C5DA8A00E91B46 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A0BDF26C5DA8A00E91B46 /* HomeView.swift */; };
+		145A0BE326C6F4B100E91B46 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A0BE226C6F4B100E91B46 /* User.swift */; };
+		145A0BE926C7861200E91B46 /* TabLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A0BE826C7861200E91B46 /* TabLink.swift */; };
+		145A0BEB26C7A2F300E91B46 /* BarButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A0BEA26C7A2F300E91B46 /* BarButtonStyle.swift */; };
+		145CA4CC270CA2C500302963 /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145CA4CB270CA2C500302963 /* Pages.swift */; };
+		147AAA5826F65541008F4E4F /* PhotoDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147AAA5726F65541008F4E4F /* PhotoDocument.swift */; };
 		149396F326C53E6400F70883 /* Smart_AndoverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149396F226C53E6400F70883 /* Smart_AndoverApp.swift */; };
 		149396F526C53E6400F70883 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149396F426C53E6400F70883 /* ContentView.swift */; };
 		149396F726C53E6700F70883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 149396F626C53E6700F70883 /* Assets.xcassets */; };
 		149396FA26C53E6700F70883 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 149396F926C53E6700F70883 /* Preview Assets.xcassets */; };
 		1493970526C53E6700F70883 /* Smart_AndoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1493970426C53E6700F70883 /* Smart_AndoverTests.swift */; };
 		1493971026C53E6700F70883 /* Smart_AndoverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1493970F26C53E6700F70883 /* Smart_AndoverUITests.swift */; };
+		1493972126C593D800F70883 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1493972026C593D800F70883 /* ImagePickerView.swift */; };
+		1494F1D7271F9F3B00A74C7B /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494F1D6271F9F3B00A74C7B /* ChatBubble.swift */; };
+		149636AE26C8857E0076F5B2 /* AlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149636AD26C8857E0076F5B2 /* AlertButton.swift */; };
+		149636B626C995870076F5B2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149636B526C995870076F5B2 /* ProfileView.swift */; };
+		14A3F51627089EFD008B5732 /* SmartSlideShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A3F51527089EFD008B5732 /* SmartSlideShow.swift */; };
+		14A3F51827089F6A008B5732 /* RewardsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A3F51727089F6A008B5732 /* RewardsList.swift */; };
+		14A3F51A2708CC36008B5732 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A3F5192708CC36008B5732 /* Colors.swift */; };
+		14B8DD1326EF012600DE379B /* FunFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B8DD1226EF012600DE379B /* FunFacts.swift */; };
+		14B8DD1526EF01C300DE379B /* FunFactsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B8DD1426EF01C300DE379B /* FunFactsData.swift */; };
+		14B8DD1826EF05CB00DE379B /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B8DD1726EF05CB00DE379B /* TutorialView.swift */; };
+		14B8DD5526F2ACC900DE379B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B8DD5426F2ACC900DE379B /* LaunchScreen.storyboard */; };
+		14B8DD5726F2AEF200DE379B /* AuthorizedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B8DD5626F2AEF200DE379B /* AuthorizedView.swift */; };
+		14B8DD5926F2AF4100DE379B /* Authority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B8DD5826F2AF4100DE379B /* Authority.swift */; };
+		14B8DD5D26F2BC6400DE379B /* PhotoHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B8DD5C26F2BC6400DE379B /* PhotoHandling.swift */; };
+		14B8DD6726F50C9100DE379B /* PhotoInspectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B8DD6626F50C9100DE379B /* PhotoInspectionView.swift */; };
+		14BF565826C99EA2004C85FF /* ActionSheetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF565726C99EA2004C85FF /* ActionSheetButton.swift */; };
+		14BF565A26C9A148004C85FF /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF565926C9A148004C85FF /* PhotoCaptureView.swift */; };
+		4BDC0901B7A9423DB0A66999 /* libPods-Smart Andover.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94648E67275842E6D24FB7EE /* libPods-Smart Andover.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +77,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1429E2C226FD49DA00B5F4BC /* Smart Andover.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Smart Andover.entitlements"; sourceTree = "<group>"; };
+		1429E2C326FD4E8400B5F4BC /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		1429E2C72700329F00B5F4BC /* RequiredField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredField.swift; sourceTree = "<group>"; };
+		142B68DA26E1A21800A465F7 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		142B68E926E3EF0E00A465F7 /* SmartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartView.swift; sourceTree = "<group>"; };
+		142B68EB26E3EF1D00A465F7 /* SmartCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCard.swift; sourceTree = "<group>"; };
+		142B68ED26E3EF2A00A465F7 /* SmartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartModel.swift; sourceTree = "<group>"; };
+		142D42D4270BD33D00DBDCAB /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		1431AAF526C9F9340073456F /* FadeScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeScrollView.swift; sourceTree = "<group>"; };
+		1431AAFB26CAD6AB0073456F /* FirstLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunch.swift; sourceTree = "<group>"; };
+		1431AAFD26CAD84E0073456F /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		1431AB1426D60C4A0073456F /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		1431AB1626D60D410073456F /* LeaderboardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardItem.swift; sourceTree = "<group>"; };
+		14368DDA26C847D60017398E /* BubbleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BubbleStyle.swift; path = "../New Group1/BubbleStyle.swift"; sourceTree = "<group>"; };
+		14368DDC26C84F4B0017398E /* ProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewStyle.swift; sourceTree = "<group>"; };
+		1450819F26E53BD600B0A4FA /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
+		145081A126E7E7F600B0A4FA /* SmartModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartModelData.swift; sourceTree = "<group>"; };
+		145081A526E8447900B0A4FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		145081A826E84C3C00B0A4FA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		145081AA26E8532300B0A4FA /* DatabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
+		145081AC26E8598800B0A4FA /* ImageToJPEG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageToJPEG.swift; sourceTree = "<group>"; };
+		145A0BDF26C5DA8A00E91B46 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		145A0BE226C6F4B100E91B46 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		145A0BE826C7861200E91B46 /* TabLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabLink.swift; sourceTree = "<group>"; };
+		145A0BEA26C7A2F300E91B46 /* BarButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarButtonStyle.swift; sourceTree = "<group>"; };
+		145CA4CB270CA2C500302963 /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
+		147AAA5726F65541008F4E4F /* PhotoDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDocument.swift; sourceTree = "<group>"; };
 		149396EF26C53E6400F70883 /* Smart Andover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Andover.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		149396F226C53E6400F70883 /* Smart_AndoverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_AndoverApp.swift; sourceTree = "<group>"; };
 		149396F426C53E6400F70883 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +116,26 @@
 		1493970B26C53E6700F70883 /* Smart AndoverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart AndoverUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1493970F26C53E6700F70883 /* Smart_AndoverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_AndoverUITests.swift; sourceTree = "<group>"; };
 		1493971126C53E6700F70883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1493972026C593D800F70883 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		1494F1D6271F9F3B00A74C7B /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		149636AD26C8857E0076F5B2 /* AlertButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertButton.swift; sourceTree = "<group>"; };
+		149636B526C995870076F5B2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		14A3F51527089EFD008B5732 /* SmartSlideShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartSlideShow.swift; sourceTree = "<group>"; };
+		14A3F51727089F6A008B5732 /* RewardsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsList.swift; sourceTree = "<group>"; };
+		14A3F5192708CC36008B5732 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		14B8DD1226EF012600DE379B /* FunFacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFacts.swift; sourceTree = "<group>"; };
+		14B8DD1426EF01C300DE379B /* FunFactsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactsData.swift; sourceTree = "<group>"; };
+		14B8DD1726EF05CB00DE379B /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		14B8DD5426F2ACC900DE379B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14B8DD5626F2AEF200DE379B /* AuthorizedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizedView.swift; sourceTree = "<group>"; };
+		14B8DD5826F2AF4100DE379B /* Authority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authority.swift; sourceTree = "<group>"; };
+		14B8DD5C26F2BC6400DE379B /* PhotoHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoHandling.swift; sourceTree = "<group>"; };
+		14B8DD6626F50C9100DE379B /* PhotoInspectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInspectionView.swift; sourceTree = "<group>"; };
+		14BF565726C99EA2004C85FF /* ActionSheetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetButton.swift; sourceTree = "<group>"; };
+		14BF565926C9A148004C85FF /* PhotoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureView.swift; sourceTree = "<group>"; };
+		94648E67275842E6D24FB7EE /* libPods-Smart Andover.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Smart Andover.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA1D96BDDC923F2418C626C9 /* Pods-Smart Andover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Andover.debug.xcconfig"; path = "Target Support Files/Pods-Smart Andover/Pods-Smart Andover.debug.xcconfig"; sourceTree = "<group>"; };
+		F2113FF2AEAA286D58D1B780 /* Pods-Smart Andover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Andover.release.xcconfig"; path = "Target Support Files/Pods-Smart Andover/Pods-Smart Andover.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BDC0901B7A9423DB0A66999 /* libPods-Smart Andover.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +164,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		142B68E826E3EEE000A465F7 /* SmartView */ = {
+			isa = PBXGroup;
+			children = (
+				14A3F51527089EFD008B5732 /* SmartSlideShow.swift */,
+				142B68E926E3EF0E00A465F7 /* SmartView.swift */,
+				142B68EB26E3EF1D00A465F7 /* SmartCard.swift */,
+				142B68ED26E3EF2A00A465F7 /* SmartModel.swift */,
+				145081A126E7E7F600B0A4FA /* SmartModelData.swift */,
+			);
+			path = SmartView;
+			sourceTree = "<group>";
+		};
+		1431AB1326D60C200073456F /* Leaderboard */ = {
+			isa = PBXGroup;
+			children = (
+				1431AB1426D60C4A0073456F /* LeaderboardView.swift */,
+				1431AB1626D60D410073456F /* LeaderboardItem.swift */,
+			);
+			path = Leaderboard;
+			sourceTree = "<group>";
+		};
+		145081A726E84C3200B0A4FA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				145081A826E84C3C00B0A4FA /* LoginView.swift */,
+				1429E2C72700329F00B5F4BC /* RequiredField.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		145081AE26E9CB4A00B0A4FA /* ExaminationView */ = {
+			isa = PBXGroup;
+			children = (
+				14B8DD5626F2AEF200DE379B /* AuthorizedView.swift */,
+				14B8DD6626F50C9100DE379B /* PhotoInspectionView.swift */,
+			);
+			path = ExaminationView;
+			sourceTree = "<group>";
+		};
+		145081AF26EA8CAA00B0A4FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1431AAF526C9F9340073456F /* FadeScrollView.swift */,
+				145A0BE826C7861200E91B46 /* TabLink.swift */,
+				142B68DA26E1A21800A465F7 /* BlurView.swift */,
+				149636AD26C8857E0076F5B2 /* AlertButton.swift */,
+				14BF565726C99EA2004C85FF /* ActionSheetButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		145081B026EA8CB000B0A4FA /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				14368DDA26C847D60017398E /* BubbleStyle.swift */,
+				145A0BEA26C7A2F300E91B46 /* BarButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		145A0BE126C6F4A100E91B46 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				145A0BE226C6F4B100E91B46 /* User.swift */,
+				14B8DD5826F2AF4100DE379B /* Authority.swift */,
+				1450819F26E53BD600B0A4FA /* CurrentUser.swift */,
+				1429E2C326FD4E8400B5F4BC /* Keychain.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		149396E626C53E6400F70883 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +242,8 @@
 				1493970326C53E6700F70883 /* Smart AndoverTests */,
 				1493970E26C53E6700F70883 /* Smart AndoverUITests */,
 				149396F026C53E6400F70883 /* Products */,
+				3C703ABB3BA252996910CBC8 /* Pods */,
+				9C7C410E07E961EF9F2B2C0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,10 +260,17 @@
 		149396F126C53E6400F70883 /* Smart Andover */ = {
 			isa = PBXGroup;
 			children = (
-				149396F226C53E6400F70883 /* Smart_AndoverApp.swift */,
-				149396F426C53E6400F70883 /* ContentView.swift */,
-				149396F626C53E6700F70883 /* Assets.xcassets */,
+				1429E2C226FD49DA00B5F4BC /* Smart Andover.entitlements */,
 				149396FB26C53E6700F70883 /* Info.plist */,
+				145081A526E8447900B0A4FA /* GoogleService-Info.plist */,
+				149396F626C53E6700F70883 /* Assets.xcassets */,
+				149396F226C53E6400F70883 /* Smart_AndoverApp.swift */,
+				1431AAFB26CAD6AB0073456F /* FirstLaunch.swift */,
+				14A3F5192708CC36008B5732 /* Colors.swift */,
+				14B8DD5426F2ACC900DE379B /* LaunchScreen.storyboard */,
+				1493972426C5A0E800F70883 /* Database */,
+				1493971D26C53E6F00F70883 /* UI */,
+				145A0BE126C6F4A100E91B46 /* User */,
 				149396F826C53E6700F70883 /* Preview Content */,
 			);
 			path = "Smart Andover";
@@ -130,6 +302,101 @@
 			path = "Smart AndoverUITests";
 			sourceTree = "<group>";
 		};
+		1493971D26C53E6F00F70883 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				149396F426C53E6400F70883 /* ContentView.swift */,
+				142D42D4270BD33D00DBDCAB /* SideMenuView.swift */,
+				145CA4CB270CA2C500302963 /* Pages.swift */,
+				1431AAFD26CAD84E0073456F /* Logo.swift */,
+				14B8DD1626EF05B900DE379B /* Tutorial */,
+				145081A726E84C3200B0A4FA /* Login */,
+				149636B226C993E90076F5B2 /* Home */,
+				145081AE26E9CB4A00B0A4FA /* ExaminationView */,
+				149636B426C9956D0076F5B2 /* Profile */,
+				1431AB1326D60C200073456F /* Leaderboard */,
+				149636B126C993AB0076F5B2 /* Custom Objects */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1493972426C5A0E800F70883 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				145081AA26E8532300B0A4FA /* DatabaseController.swift */,
+				147AAA5726F65541008F4E4F /* PhotoDocument.swift */,
+				14B8DD5C26F2BC6400DE379B /* PhotoHandling.swift */,
+				145081AC26E8598800B0A4FA /* ImageToJPEG.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		149636B126C993AB0076F5B2 /* Custom Objects */ = {
+			isa = PBXGroup;
+			children = (
+				142B68E826E3EEE000A465F7 /* SmartView */,
+				145081AF26EA8CAA00B0A4FA /* Views */,
+				145081B026EA8CB000B0A4FA /* Styles */,
+			);
+			path = "Custom Objects";
+			sourceTree = "<group>";
+		};
+		149636B226C993E90076F5B2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				145A0BDF26C5DA8A00E91B46 /* HomeView.swift */,
+				14A3F51727089F6A008B5732 /* RewardsList.swift */,
+				14BF565926C9A148004C85FF /* PhotoCaptureView.swift */,
+				1493972026C593D800F70883 /* ImagePickerView.swift */,
+				14368DDC26C84F4B0017398E /* ProgressViewStyle.swift */,
+				14CCCB4C26EB07C900FE1471 /* FunFactsView */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		149636B426C9956D0076F5B2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				149636B526C995870076F5B2 /* ProfileView.swift */,
+				1494F1D6271F9F3B00A74C7B /* ChatBubble.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		14B8DD1626EF05B900DE379B /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				14B8DD1726EF05CB00DE379B /* TutorialView.swift */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		14CCCB4C26EB07C900FE1471 /* FunFactsView */ = {
+			isa = PBXGroup;
+			children = (
+				14B8DD1226EF012600DE379B /* FunFacts.swift */,
+				14B8DD1426EF01C300DE379B /* FunFactsData.swift */,
+			);
+			path = FunFactsView;
+			sourceTree = "<group>";
+		};
+		3C703ABB3BA252996910CBC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA1D96BDDC923F2418C626C9 /* Pods-Smart Andover.debug.xcconfig */,
+				F2113FF2AEAA286D58D1B780 /* Pods-Smart Andover.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9C7C410E07E961EF9F2B2C0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94648E67275842E6D24FB7EE /* libPods-Smart Andover.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +404,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1493971426C53E6700F70883 /* Build configuration list for PBXNativeTarget "Smart Andover" */;
 			buildPhases = (
+				C30B14524FF529183DCC2EDC /* [CP] Check Pods Manifest.lock */,
 				149396EB26C53E6400F70883 /* Sources */,
 				149396EC26C53E6400F70883 /* Frameworks */,
 				149396ED26C53E6400F70883 /* Resources */,
+				C6F3F7C41B84E221198C8C67 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,7 +502,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				145081A626E8447900B0A4FA /* GoogleService-Info.plist in Resources */,
 				149396FA26C53E6700F70883 /* Preview Assets.xcassets in Resources */,
+				14B8DD5526F2ACC900DE379B /* LaunchScreen.storyboard in Resources */,
 				149396F726C53E6700F70883 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,12 +525,95 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C30B14524FF529183DCC2EDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Smart Andover-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6F3F7C41B84E221198C8C67 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Smart Andover/Pods-Smart Andover-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Smart Andover/Pods-Smart Andover-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Smart Andover/Pods-Smart Andover-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		149396EB26C53E6400F70883 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				145081AB26E8532300B0A4FA /* DatabaseController.swift in Sources */,
+				1431AB1726D60D410073456F /* LeaderboardItem.swift in Sources */,
+				149636AE26C8857E0076F5B2 /* AlertButton.swift in Sources */,
+				1493972126C593D800F70883 /* ImagePickerView.swift in Sources */,
+				14BF565A26C9A148004C85FF /* PhotoCaptureView.swift in Sources */,
+				145081A226E7E7F600B0A4FA /* SmartModelData.swift in Sources */,
+				145081A026E53BD600B0A4FA /* CurrentUser.swift in Sources */,
+				1494F1D7271F9F3B00A74C7B /* ChatBubble.swift in Sources */,
+				14B8DD6726F50C9100DE379B /* PhotoInspectionView.swift in Sources */,
+				14B8DD5726F2AEF200DE379B /* AuthorizedView.swift in Sources */,
+				142B68EA26E3EF0E00A465F7 /* SmartView.swift in Sources */,
+				145A0BEB26C7A2F300E91B46 /* BarButtonStyle.swift in Sources */,
+				142B68EC26E3EF1D00A465F7 /* SmartCard.swift in Sources */,
+				1431AB1526D60C4B0073456F /* LeaderboardView.swift in Sources */,
+				145081AD26E8598800B0A4FA /* ImageToJPEG.swift in Sources */,
 				149396F526C53E6400F70883 /* ContentView.swift in Sources */,
+				149636B626C995870076F5B2 /* ProfileView.swift in Sources */,
+				145A0BE326C6F4B100E91B46 /* User.swift in Sources */,
+				14368DDD26C84F4B0017398E /* ProgressViewStyle.swift in Sources */,
+				145CA4CC270CA2C500302963 /* Pages.swift in Sources */,
+				145081A926E84C3C00B0A4FA /* LoginView.swift in Sources */,
+				145A0BE926C7861200E91B46 /* TabLink.swift in Sources */,
+				14B8DD5926F2AF4100DE379B /* Authority.swift in Sources */,
+				14368DDB26C847D60017398E /* BubbleStyle.swift in Sources */,
+				14BF565826C99EA2004C85FF /* ActionSheetButton.swift in Sources */,
+				14A3F51A2708CC36008B5732 /* Colors.swift in Sources */,
+				14A3F51827089F6A008B5732 /* RewardsList.swift in Sources */,
+				14A3F51627089EFD008B5732 /* SmartSlideShow.swift in Sources */,
+				1431AAF626C9F9340073456F /* FadeScrollView.swift in Sources */,
+				147AAA5826F65541008F4E4F /* PhotoDocument.swift in Sources */,
+				142B68DB26E1A21800A465F7 /* BlurView.swift in Sources */,
+				145A0BE026C5DA8A00E91B46 /* HomeView.swift in Sources */,
+				14B8DD1826EF05CB00DE379B /* TutorialView.swift in Sources */,
+				14B8DD1326EF012600DE379B /* FunFacts.swift in Sources */,
+				1431AAFC26CAD6AB0073456F /* FirstLaunch.swift in Sources */,
+				1429E2C426FD4E8400B5F4BC /* Keychain.swift in Sources */,
+				14B8DD5D26F2BC6400DE379B /* PhotoHandling.swift in Sources */,
+				142D42D5270BD33D00DBDCAB /* SideMenuView.swift in Sources */,
+				1431AAFE26CAD84E0073456F /* Logo.swift in Sources */,
+				14B8DD1526EF01C300DE379B /* FunFactsData.swift in Sources */,
+				1429E2C82700329F00B5F4BC /* RequiredField.swift in Sources */,
+				142B68EE26E3EF2A00A465F7 /* SmartModel.swift in Sources */,
 				149396F326C53E6400F70883 /* Smart_AndoverApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,7 +701,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -402,7 +756,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -414,12 +768,14 @@
 		};
 		1493971526C53E6700F70883 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA1D96BDDC923F2418C626C9 /* Pods-Smart Andover.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Smart Andover/Smart Andover.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Smart Andover/Preview Content\"";
-				DEVELOPMENT_TEAM = K4ZMXMC2TC;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Smart Andover/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -430,18 +786,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "cezzi.Smart-Andover";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		1493971626C53E6700F70883 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2113FF2AEAA286D58D1B780 /* Pods-Smart Andover.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Smart Andover/Smart Andover.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Smart Andover/Preview Content\"";
-				DEVELOPMENT_TEAM = K4ZMXMC2TC;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Smart Andover/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -452,7 +810,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "cezzi.Smart-Andover";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
