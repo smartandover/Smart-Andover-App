@@ -1,6 +1,6 @@
 # Smart Andover Mobile App
 A mobile application based in Phillips Academy Andover that rewards students for sustainable acts. 
-## [iOS](smartandover/Smart-Andover-iOS-App/iOS) Notes
+## iOS Notes
 - Use the .xcworkspace when working with the Xcode project.
 - iOS 13.0 required for deployment.
 - User interface constructed entirely through SwiftUI.
