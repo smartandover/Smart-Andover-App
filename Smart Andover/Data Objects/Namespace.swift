@@ -1,20 +1,12 @@
 //
-//  SmartModel.swift
+//  NamespaceEnvironment.swift
 //  Smart Andover
 //
-//  Created by Chaniel Ezzi on 9/4/21.
+//  Created by Chaniel Ezzi on 11/29/21.
 //
 
 import SwiftUI
 
-struct SmartModel {
-    
-    let theme: Color
-    let title: String
-    let symbol: Image
-    let text: String
-    
-}
 
 private struct WrappedNamespace {
     
@@ -26,7 +18,6 @@ private struct NamespaceEnvironmentKey: EnvironmentKey {
     
     static let defaultValue: WrappedNamespace = .init(id: nil)
     
-    
 }
 
 extension EnvironmentValues {
@@ -35,7 +26,6 @@ extension EnvironmentValues {
         
         get { self[NamespaceEnvironmentKey.self].id }
         set { self[NamespaceEnvironmentKey.self] = WrappedNamespace(id: newValue) }
-        
         
     }
     

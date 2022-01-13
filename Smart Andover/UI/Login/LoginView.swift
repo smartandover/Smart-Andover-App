@@ -12,7 +12,7 @@ struct LoginView: View {
     @Namespace var namespace
     
     private enum Pages {
-        case start, login, register
+        case start, login, register, resetPassword
     }
     
     @Binding var user: User?
@@ -38,6 +38,9 @@ struct LoginView: View {
             
         case .register:
             RegisterView()
+            
+        case .resetPassword:
+            ResetPasswordView()
             
         }
         
@@ -99,6 +102,14 @@ struct LoginView: View {
             Button("Login", action: login)
                 .buttonStyle(BarButtonStyle(tint: .theme))
                 .matchedGeometryEffect(id: 0, in: namespace)
+            
+            Button("Forgot Password") {
+                
+                state = .resetPassword
+                
+            }
+            .buttonStyle(PlainButtonStyle())
+            .foregroundColor(.theme)
             
             Button("Back") {
                 
@@ -174,6 +185,56 @@ struct LoginView: View {
         
     }
     
+    @ViewBuilder func ResetPasswordView () -> some View {
+        
+        VStack (spacing: 10) {
+            
+            TextField("Email", text: $email)
+                .textContentType(.emailAddress)
+            
+            Button("Send") {
+                
+                DatabaseController.authentication.sendPasswordReset(withEmail: email) { er in
+                    if let er = er {
+                        error = er
+                    }
+                    else {
+                        state = .start
+                    }
+                }
+                
+            }
+            .buttonStyle(BarButtonStyle(tint: .blue))
+            
+            Text("Enter your email address and we'll send you instructions to reset your password.")
+                .foregroundColor(.secondary)
+                .font(.caption)
+            
+            Button("Back") {
+                
+                withAnimation {
+                    shouldStarFields = false
+                    error = nil
+                    state = .login
+                }
+                
+            }
+            .buttonStyle(PlainButtonStyle())
+            .foregroundColor(.theme)
+            
+            if let error = error {
+                Text(error.localizedDescription)
+                    .foregroundColor(.red)
+                    .font(.caption)
+                    .layoutPriority(1)
+            }
+            
+        }
+        .textFieldStyle(RoundedBorderTextFieldStyle())
+        .padding()
+        
+    }
+    
     func login () {
         
         guard !email.isEmpty && !password.isEmpty else {
@@ -182,6 +243,18 @@ struct LoginView: View {
         }
         
         DatabaseController.signIn(email: email, password: password) { user, error in
+            
+            let credentials = try? Keychain.retrieveCredentials()
+            
+            if error == nil {
+                if credentials == nil {
+                    try? Keychain.saveCredentials(email: email, password: password)
+                }
+                else {
+                    do { try Keychain.updateCredentials(newEmail: email, newPassword: password) }
+                    catch { print(error) }
+                }
+            }
             
             withAnimation {
                 self.user = user
@@ -200,6 +273,13 @@ struct LoginView: View {
         }
         
         DatabaseController.signUp(firstName: firstName, lastName: lastName, email: email, password: password) { user, error in
+            
+            do {
+                try Keychain.saveCredentials(email: email, password: password)
+            }
+            catch {
+                print(error)
+            }
             
             withAnimation {
                 self.user = user

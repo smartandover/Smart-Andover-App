@@ -1,5 +1,5 @@
 //
-//  SideMenuView.swift
+//  NavigationMenuView.swift
 //  Smart Andover
 //
 //  Created by Chaniel Ezzi on 10/4/21.
@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct SideMenuView: View {
+struct NavigationMenuView: View {
     
     @Environment(\.currentUser) var user
-    @Binding var currentPage: Pages
+    @Binding var currentPage: NavigationPages
     @Binding var isShowing: Bool
     
     var body: some View {
@@ -29,13 +29,13 @@ struct SideMenuView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()
                 .onTapGesture {
-                    currentPage = .profile
-                    isShowing = false
+                        currentPage = .profile
+                        isShowing = false
                 }
             
             Divider()
             
-            ForEach(Pages.allCases, id: \.self) { page in
+            ForEach(NavigationPages.allCases, id: \.self) { page in
                 
                 if (page != .authorized) || (user.wrappedValue?.authority.isAuthorized ?? false) {
                     
@@ -59,9 +59,11 @@ struct SideMenuView: View {
                         title: Text("Are you sure you want to logout?"),
                         primaryButton: .cancel(),
                         secondaryButton: .default(Text("Logout"), action: {
+                
+                            user.wrappedValue = nil
                             isShowing = false
                             currentPage = .home
-                            user.wrappedValue = nil
+                
                         }))
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()

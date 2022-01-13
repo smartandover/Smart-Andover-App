@@ -139,13 +139,13 @@ struct PhotoCaptureView: View {
             Color.clear.frame(height: 0)
                 // Camera
                 .fullScreenCover(isPresented: $showCamera) {
-                    ImagePickerView(isShown: $showCamera, image: $photo, imageSource: .camera)
+                    ImagePicker(isShown: $showCamera, image: $photo, imageSource: .camera)
                         .ignoresSafeArea()
                 }
             Color.clear.frame(height: 0)
                 // Library
                 .sheet(isPresented: $showLibrary) {
-                    ImagePickerView(isShown: $showLibrary, image: $photo, imageSource: .photoLibrary)
+                    ImagePicker(isShown: $showLibrary, image: $photo, imageSource: .photoLibrary)
                 }
             
         }

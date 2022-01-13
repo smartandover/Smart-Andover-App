@@ -1,5 +1,5 @@
 //
-//  AuthorizedView.swift
+//  AdminView.swift
 //  Smart Andover
 //
 //  Created by Chaniel Ezzi on 9/15/21.
@@ -8,7 +8,7 @@
 import SwiftUI
 import Firebase
 
-struct AuthorizedView: View {
+struct AdminView: View {
     
     @Environment(\.currentUser) var user
     @State var documents: [PhotoDocument]?
@@ -37,7 +37,7 @@ struct AuthorizedView: View {
                             .ignoresSafeArea()
                             .zIndex(1)
                         
-                        PhotoInspectionView(document: currentDocument, selection: $currentDocument.animation())
+                        AdminInspectionView(document: currentDocument, selection: $currentDocument.animation())
                             .zIndex(2)
                             .transition(.move(edge: .bottom))
                         
@@ -45,7 +45,7 @@ struct AuthorizedView: View {
                     
                     VStack {
                         
-//                        Label(Pages.authorized.title, systemImage: Pages.authorized.systemImageName)
+//                        Label(NavigationPages.authorized.title, systemImage: NavigationPages.authorized.systemImageName)
 //                            .font(.title.bold())
                     
                         ScrollView {

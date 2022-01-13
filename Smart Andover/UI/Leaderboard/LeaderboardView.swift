@@ -47,11 +47,15 @@ struct LeaderboardView: View {
                 
                 HStack {
                     if index == 0 {
-                        Image(systemName: "crown.fill")
-                            .foregroundColor(.yellow)
+                        VStack {
+                            Image(systemName: "crown.fill")
+                                .foregroundColor(.yellow)
+                            Text("\(user.points)").bold()
+                                .foregroundColor(.themeDark)
+                        }
                     }
                     else {
-                        Text("\(index + 1).").bold()
+                        Text("\(user.points)").bold()
                             .foregroundColor(.themeDark)
                     }
                     LeaderboardItem(user: user)

@@ -1,5 +1,5 @@
 //
-//  FadeScrollView.swift
+//  FadingScrollView.swift
 //  Smart Andover
 //
 //  Created by Chaniel Ezzi on 8/15/21.
@@ -17,7 +17,7 @@ private struct ScrollDistance: PreferenceKey {
     
 }
 
-struct FadeScrollView <Label: View, Bar: View, Content: View>: View {
+struct FadingScrollView <Label: View, Bar: View, Content: View>: View {
     
     var fullLabel: () -> Label
     var barLabel: () -> Bar

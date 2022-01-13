@@ -1,5 +1,5 @@
 //
-//  Pages.swift
+//  NavigationPages.swift
 //  Smart Andover
 //
 //  Created by Chaniel Ezzi on 10/5/21.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-enum Pages {
+enum NavigationPages {
     
     // Profile useless atm, if we are going to use school accounts
     case home, leaderboard, authorized, profile, settings
     
-    static var allCases: [Pages] = [.home, .leaderboard, .authorized]
+    static var allCases: [NavigationPages] = [.home, .leaderboard, .authorized]
     
     var title: String {
         switch self {

@@ -6,14 +6,14 @@
 //
 
 import SwiftUI
-import Firebase
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
         UIScrollView.appearance().bounces = true
-        FirebaseApp.configure()
+        
+        DatabaseController.configure()
         
         return true
         
@@ -22,16 +22,18 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 }
 
 @main
-struct Smart_AndoverApp: App {
+struct SmartAndoverApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    @State var user: User? = User(email: "cabouezzi22@andover.edu", firstName: "Chaniel", lastName: "Abou-Ezzi", authority: .president)
+    @State var user: User? = nil
     
     //For logo animation in login/register view
     @Namespace var namespace
     
     @State var showMenu: Bool = false
-    @State var currentPage: Pages = .home
+    @State var currentPage: NavigationPages = .home
+    
+    @State var keychainLoaded: Bool = false
     
     var body: some Scene {
         
@@ -89,7 +91,7 @@ struct Smart_AndoverApp: App {
                             LeaderboardView()
                             
                         case .authorized:
-                            AuthorizedView()
+                            AdminView()
                                 .background(Color.themeLight)
                             
                         case .profile:
@@ -109,7 +111,7 @@ struct Smart_AndoverApp: App {
                                 }
                             }
                         
-                        SideMenuView(currentPage: $currentPage, isShowing: $showMenu)
+                        NavigationMenuView(currentPage: $currentPage.animation(), isShowing: $showMenu.animation())
                             .foregroundColor(.themeDark)
                             .background(Color.themeLight.ignoresSafeArea())
                             .animation(.easeInOut)
@@ -148,7 +150,24 @@ struct Smart_AndoverApp: App {
                         .matchedGeometryEffect(id: "LOGO", in: namespace)
                         .scaleEffect(1.5)
                     
-                    LoginView(user: $user)
+                    if keychainLoaded {
+                        LoginView(user: $user)
+                    }
+                    else {
+                        ProgressView()
+                            .onAppear {
+                                do {
+                                    try Keychain.autoSignIn($user) {
+                                        keychainLoaded = true
+                                    }
+                                }
+                                catch {
+                                    withAnimation {
+                                        keychainLoaded = true
+                                    }
+                                }
+                            }
+                    }
                     
                     Spacer()
                     

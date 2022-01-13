@@ -107,6 +107,7 @@ extension DatabaseController {
         database
             .collection("ResolvedPhotos")
             .whereField("userEmail", isEqualTo: email)
+            .order(by: "dateSubmitted", descending: true)
             .getDocuments { query, error in
                 
                 guard let query = query, error == nil else {

@@ -21,4 +21,13 @@ enum Authority: Int, Codable {
         
     }
     
+    var title: String {
+        switch self {
+        case .normal: return "Member"
+        case .board: return "Board Member"
+        case .boardAuthorized: return "Board Head"
+        case .president: return "President"
+        }
+    }
+    
 }

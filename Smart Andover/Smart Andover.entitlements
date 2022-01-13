@@ -4,7 +4,7 @@
 <dict>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)cezzi.Smart-Andover</string>
+		<string>$(AppIdentifierPrefix)smartandover.Smart-Andover</string>
 	</array>
 </dict>
 </plist>

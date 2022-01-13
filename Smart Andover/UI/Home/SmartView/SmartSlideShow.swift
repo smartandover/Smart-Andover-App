@@ -128,24 +128,3 @@ struct SmartSlidesView: View {
     }
     
 }
-
-struct SmartInformationView: View {
-    
-    var body: some View {
-        
-        SmartView {
-            LazyVGrid(columns: [GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible())]) {
-
-                ForEach(0..<SmartModel.models.count) { index in
-                    SmartCard(id: String(index), model: SmartModel.models[index])
-                        .aspectRatio(contentMode: .fit)
-                }
-
-            }
-            .layoutPriority(-1)
-            .padding(.horizontal)
-        }
-        
-    }
-    
-}

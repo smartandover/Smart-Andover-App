@@ -22,12 +22,12 @@ struct ChatBubble: Shape {
         let height = maxY - minY
         
         path.addRoundedRect(in: .init(x: 0, y: 0, width: width, height: height), cornerSize: .init(width: 10, height: 10))
-        path.addLine(to: .init(x: minX+50, y: maxY))
-        path.addLine(to: .init(x: minX+40, y: maxY+7))
-        path.addCurve(to:       .init(x: minX+30, y: maxY+7),
-                      control1: .init(x: minX+40, y: maxY+7),
-                      control2: .init(x: minX+30, y: maxY+15))
         path.addLine(to: .init(x: minX+30, y: maxY))
+        path.addLine(to: .init(x: minX+20, y: maxY+7))
+        path.addCurve(to:       .init(x: minX+10, y: maxY+7),
+                      control1: .init(x: minX+20, y: maxY+7),
+                      control2: .init(x: minX+10, y: maxY+15))
+        path.addLine(to: .init(x: minX+10, y: maxY))
         
         return path
         

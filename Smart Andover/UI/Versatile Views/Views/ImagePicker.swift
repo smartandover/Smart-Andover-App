@@ -8,7 +8,7 @@
 import SwiftUI
 import UIKit
 
-struct ImagePickerView: UIViewControllerRepresentable {
+struct ImagePicker: UIViewControllerRepresentable {
     
     @Binding var isShown: Bool
     @Binding var image: UIImage?
@@ -16,7 +16,7 @@ struct ImagePickerView: UIViewControllerRepresentable {
     let imageSource: UIImagePickerController.SourceType
     
     func makeCoordinator() -> Coordinator {
-        return ImagePickerView.Coordinator(isShown: $isShown, image: $image)
+        return ImagePicker.Coordinator(isShown: $isShown, image: $image)
     }
     
     func makeUIViewController(context: Context) -> UIImagePickerController {
@@ -38,7 +38,7 @@ struct ImagePickerView: UIViewControllerRepresentable {
     
 }
 
-extension ImagePickerView {
+extension ImagePicker {
     
     class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
         

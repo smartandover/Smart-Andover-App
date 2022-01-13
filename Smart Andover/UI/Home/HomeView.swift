@@ -14,7 +14,7 @@ struct HomeView: View {
     
     var body: some View {
         
-        FadeScrollView(barLabel: {
+        FadingScrollView(barLabel: {
             
             Label("Available Points: \(user.wrappedValue!.points)", systemImage: "rosette")
                 .font(.caption.bold())
@@ -40,10 +40,14 @@ struct HomeView: View {
                     Label("Welcome back \(user.wrappedValue!.firstName)!", systemImage: "rosette")
                         .foregroundColor(.themeDark)
                     
+                    Text(user.wrappedValue!.authority.title)
+                        .foregroundColor(.themeDark)
+                        .font(.system(size: 15, weight: .light, design: .rounded))
+                    
                 }
                 
                 VStack {
-                    FunFacts()
+                    FunFactsView()
                         .font(.caption2)
                         .foregroundColor(.themeDark)
                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
@@ -87,7 +91,7 @@ struct HomeView: View {
             RewardsView()
                 .padding(.horizontal)
             
-            
+            Spacer(minLength: 100)
             
         })
         

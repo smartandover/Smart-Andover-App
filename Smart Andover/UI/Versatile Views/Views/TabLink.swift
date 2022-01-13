@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+///Convenience view to add a label and destination to a TabView. Similar to NavigationLink in the context of a NavigationView.
 struct TabLink<Content: View, Icon: View>: View {
     
     @State var tabItem: () -> Icon

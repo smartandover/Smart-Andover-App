@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MasterView.swift
 //  Smart Andover
 //
 //  Created by Chaniel Ezzi on 8/12/21.
@@ -12,7 +12,7 @@ private enum TabState: Hashable {
     case profile, home, rewards, leaderboard, authorized
 }
 
-struct ContentView: View {
+struct MasterView: View {
     
     @Environment(\.currentUser) var user
     // The page open when the app is first launched
@@ -41,7 +41,7 @@ struct ContentView: View {
             if user.wrappedValue!.authority.isAuthorized {
                 
                 //Auth view
-                TabLink(tabItem: Image(systemName: "checkmark.circle").padding(), destination: AuthorizedView())
+                TabLink(tabItem: Image(systemName: "checkmark.circle").padding(), destination: AdminView())
                     .tag(TabState.authorized)
                 
             }

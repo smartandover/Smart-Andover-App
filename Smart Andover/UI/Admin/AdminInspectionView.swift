@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PhotoInspectionView: View {
+struct AdminInspectionView: View {
     
     let document: PhotoDocument
     

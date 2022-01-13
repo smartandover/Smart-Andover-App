@@ -1,5 +1,5 @@
 //
-//  FunFacts.swift
+//  FunFactsView.swift
 //  Smart Andover
 //
 //  Created by Chaniel Ezzi on 9/12/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FunFacts: View {
+struct FunFactsView: View {
     
     @State private var currentFact: String
     @State private var usedFacts: [String]
@@ -15,7 +15,7 @@ struct FunFacts: View {
     let timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
     
     init () {
-        let new = FunFacts.facts.randomElement()!
+        let new = FunFactsView.facts.randomElement()!
         currentFact = new
         usedFacts = [new]
     }
@@ -35,12 +35,12 @@ struct FunFacts: View {
     
     func changeFact () {
         
-        if let new = FunFacts.facts.filter({ !usedFacts.contains($0) }).randomElement() {
+        if let new = FunFactsView.facts.filter({ !usedFacts.contains($0) }).randomElement() {
             currentFact = new
             usedFacts.append(new)
         }
         else {
-            currentFact = FunFacts.facts.filter({ $0 != currentFact }).randomElement()!
+            currentFact = FunFactsView.facts.filter({ $0 != currentFact }).randomElement()!
             usedFacts = [currentFact]
         }
         
