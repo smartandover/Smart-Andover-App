@@ -7,50 +7,29 @@
 
 import SwiftUI
 
-// Here for readability. Can use strings or integers for tags.
-private enum TabState: Hashable {
-    case profile, home, rewards, leaderboard, authorized
-}
-
 struct MasterView: View {
     
-    @Environment(\.currentUser) var user
+    @Environment(\.currentUser) private var user
+    
     // The page open when the app is first launched
-    @State private var selectedTab: TabState = .rewards
+    @Binding var selectedTab: NavigationPages
     
     var body: some View {
         
         TabView(selection: $selectedTab) {
-
-            // Profile
-            TabLink(tabItem: Image(systemName: "person").padding(), destination: ProfileView())
-                .tag(TabState.profile)
             
-            //Leaderboard
-            TabLink(tabItem: Image(systemName: "person.3").padding(), destination: LeaderboardView())
-                .tag(TabState.leaderboard)
-
-            // Home
-            TabLink(tabItem: Image(systemName: "house").padding(), destination:
-                    VStack {
-                        PhotoCaptureView()
-                    }
-            )
-                .tag(TabState.home)
-            
-            if user.wrappedValue!.authority.isAuthorized {
+            ForEach(NavigationPages.allCases, id: \.self) { page in
                 
-                //Auth view
-                TabLink(tabItem: Image(systemName: "checkmark.circle").padding(), destination: AdminView())
-                    .tag(TabState.authorized)
+                if (page != .authorized) || (user.wrappedValue?.authority.isAuthorized ?? false) {
+                    
+                    TabLink(tabItem: Image(systemName: page.systemImageName).padding(), destination: page.view)
+                        .tag(page)
+                    
+                }
                 
             }
-
-//            // Settings
-            TabLink(tabItem: Image(systemName: "gift").padding(), destination: HomeView())
-            .tag(TabState.rewards)
             
-            //Rewards
+            
 
         }
         

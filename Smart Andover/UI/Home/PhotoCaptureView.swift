@@ -9,8 +9,8 @@ import SwiftUI
 
 struct PhotoCaptureView: View {
     
-    @Environment(\.presentationMode) var presentationMode
-    @Environment(\.currentUser) var user
+    @Environment(\.presentationMode) private var presentationMode
+    @Environment(\.currentUser) private var user
     
     @State private var photo: UIImage?
     @State private var showActionSheet = false
@@ -30,7 +30,7 @@ struct PhotoCaptureView: View {
         "Sustainability is cool!"
     ]
     
-    @State var hype: String = PhotoCaptureView.messages.randomElement()!
+    @State private var hype: String = PhotoCaptureView.messages.randomElement()!
     
     var body: some View {
         
@@ -102,7 +102,7 @@ struct PhotoCaptureView: View {
                             title: Text("Submit photo?"),
                             message: Text("Are you sure you want to submit this photo? You cannot undo this action."),
                             primaryButton: .cancel(),
-                            secondaryButton: .default(Text("Submit").foregroundColor(.green).bold(), action: submitToDatabase))
+                            secondaryButton: .default(Text("Submit"), action: submitToDatabase))
                     .buttonStyle(BarButtonStyle(tint: .green))
                     .padding(.horizontal)
                 
@@ -119,7 +119,7 @@ struct PhotoCaptureView: View {
                             title: Text("Are you sure?"),
                             message: Text("This photo will be lost forever if not already saved on this device."),
                             primaryButton: .cancel(),
-                            secondaryButton: .destructive(Text("Delete").foregroundColor(.green).bold(), action: dismiss))
+                            secondaryButton: .destructive(Text("Delete"), action: dismiss))
                     .foregroundColor(.red)
                     .padding(.horizontal)
                 
@@ -249,7 +249,6 @@ struct PhotoCaptureView: View {
         }
         
         self.photo = nil
-//        presentationMode.wrappedValue.dismiss()
         
     }
     

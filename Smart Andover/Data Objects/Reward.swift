@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Reward: Hashable {
+struct Reward: Codable, Hashable, Identifiable {
     
     let id: String
     let available: Bool

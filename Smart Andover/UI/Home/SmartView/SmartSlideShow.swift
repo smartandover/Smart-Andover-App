@@ -30,7 +30,7 @@ struct SmartSlidesView: View {
                 let model = models[index]
                 
                 SmartCard(model: model)
-                    .frame(width: 290)
+                    .frame(width: 290, alignment: .center)
                     .offset(x: CGFloat(index * 300) - offset)
                 
             }
@@ -95,32 +95,23 @@ struct SmartSlidesView: View {
         
         GeometryReader { proxy in
             
-            HStack {
-                
-                model.symbol.resizable()
-                    .foregroundColor(.primary)
-                    .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: proxy.size.width / 4, maxHeight: proxy.size.height, alignment: .center)
-                    .padding()
-                
-                Spacer()
+            VStack {
                 
                 VStack {
+                    
+                    model.symbol.resizable()
+                        .foregroundColor(.primary)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height: proxy.size.height / 2, alignment: .center)
                     
                     Text(model.title)
                         .font(.headline.bold())
                         .foregroundColor(.primary)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    
-                    Text(model.text)
-                        .foregroundColor(.primary)
-                        .font(.caption)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    
+                        .frame(maxWidth: .infinity, alignment: .center)
                 }
                 
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .padding(.vertical)
             .bubbleStyle(color: model.theme)
             
         }

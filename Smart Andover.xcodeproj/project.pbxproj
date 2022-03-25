@@ -3,10 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1404869C27B5A0B000787CC0 /* RewardPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404869B27B5A0B000787CC0 /* RewardPreview.swift */; };
+		1404869E27B5A0C300787CC0 /* RewardDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404869D27B5A0C300787CC0 /* RewardDetailsView.swift */; };
+		140486A027B622D600787CC0 /* AdminRewardAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404869F27B622D600787CC0 /* AdminRewardAddition.swift */; };
+		1423EF4D27E9502C0094C85F /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 1423EF4C27E9502C0094C85F /* CodeScanner */; };
+		1423EF4F27E950F60094C85F /* DatabaseController–Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1423EF4E27E950F60094C85F /* DatabaseController–Authorization.swift */; };
+		1423EF5127E9512F0094C85F /* DatabaseController–RewardSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1423EF5027E9512F0094C85F /* DatabaseController–RewardSystem.swift */; };
+		1423EF6827ED4E830094C85F /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1423EF6727ED4E830094C85F /* AdminView.swift */; };
 		1429E2C426FD4E8400B5F4BC /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429E2C326FD4E8400B5F4BC /* Keychain.swift */; };
 		1429E2C82700329F00B5F4BC /* RequiredField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429E2C72700329F00B5F4BC /* RequiredField.swift */; };
 		142B68DB26E1A21800A465F7 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B68DA26E1A21800A465F7 /* BlurView.swift */; };
@@ -23,7 +30,6 @@
 		144371B3275546F5008CC4C0 /* AdminScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144371B2275546F5008CC4C0 /* AdminScannerView.swift */; };
 		145081A026E53BD600B0A4FA /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1450819F26E53BD600B0A4FA /* CurrentUser.swift */; };
 		145081A226E7E7F600B0A4FA /* SmartModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145081A126E7E7F600B0A4FA /* SmartModelData.swift */; };
-		145081A626E8447900B0A4FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 145081A526E8447900B0A4FA /* GoogleService-Info.plist */; };
 		145081A926E84C3C00B0A4FA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145081A826E84C3C00B0A4FA /* LoginView.swift */; };
 		145081AB26E8532300B0A4FA /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145081AA26E8532300B0A4FA /* DatabaseController.swift */; };
 		145081AD26E8598800B0A4FA /* ImageToJPEG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145081AC26E8598800B0A4FA /* ImageToJPEG.swift */; };
@@ -45,17 +51,18 @@
 		1494F1D7271F9F3B00A74C7B /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494F1D6271F9F3B00A74C7B /* ChatBubble.swift */; };
 		149636AE26C8857E0076F5B2 /* AlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149636AD26C8857E0076F5B2 /* AlertButton.swift */; };
 		149636B626C995870076F5B2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149636B526C995870076F5B2 /* ProfileView.swift */; };
+		14A0FF9327ED6547008AB26C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14A0FF9227ED6547008AB26C /* GoogleService-Info.plist */; };
 		14A3F51627089EFD008B5732 /* SmartSlideShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A3F51527089EFD008B5732 /* SmartSlideShow.swift */; };
-		14A3F51827089F6A008B5732 /* RewardsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A3F51727089F6A008B5732 /* RewardsList.swift */; };
+		14A3F51827089F6A008B5732 /* RewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A3F51727089F6A008B5732 /* RewardsView.swift */; };
 		14A3F51A2708CC36008B5732 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A3F5192708CC36008B5732 /* Colors.swift */; };
 		14B8DD1326EF012600DE379B /* FunFactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B8DD1226EF012600DE379B /* FunFactsView.swift */; };
 		14B8DD1526EF01C300DE379B /* FunFactsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B8DD1426EF01C300DE379B /* FunFactsData.swift */; };
 		14B8DD1826EF05CB00DE379B /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B8DD1726EF05CB00DE379B /* TutorialView.swift */; };
 		14B8DD5526F2ACC900DE379B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B8DD5426F2ACC900DE379B /* LaunchScreen.storyboard */; };
 		14B8DD5926F2AF4100DE379B /* Authority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B8DD5826F2AF4100DE379B /* Authority.swift */; };
-		14B8DD5D26F2BC6400DE379B /* PhotoHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B8DD5C26F2BC6400DE379B /* PhotoHandling.swift */; };
+		14B8DD5D26F2BC6400DE379B /* DatabaseController–PhotoHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B8DD5C26F2BC6400DE379B /* DatabaseController–PhotoHandling.swift */; };
 		14B8DD6726F50C9100DE379B /* AdminInspectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B8DD6626F50C9100DE379B /* AdminInspectionView.swift */; };
-		14BB390A2790BA7A003C227E /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BB39092790BA7A003C227E /* AdminView.swift */; };
+		14BB390A2790BA7A003C227E /* AdminSubmissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BB39092790BA7A003C227E /* AdminSubmissionsView.swift */; };
 		14BF565826C99EA2004C85FF /* ActionSheetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF565726C99EA2004C85FF /* ActionSheetButton.swift */; };
 		14BF565A26C9A148004C85FF /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF565926C9A148004C85FF /* PhotoCaptureView.swift */; };
 		4BDC0901B7A9423DB0A66999 /* libPods-Smart Andover.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94648E67275842E6D24FB7EE /* libPods-Smart Andover.a */; };
@@ -79,6 +86,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1404869B27B5A0B000787CC0 /* RewardPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardPreview.swift; sourceTree = "<group>"; };
+		1404869D27B5A0C300787CC0 /* RewardDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardDetailsView.swift; sourceTree = "<group>"; };
+		1404869F27B622D600787CC0 /* AdminRewardAddition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminRewardAddition.swift; sourceTree = "<group>"; };
+		1423EF4E27E950F60094C85F /* DatabaseController–Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseController–Authorization.swift"; sourceTree = "<group>"; };
+		1423EF5027E9512F0094C85F /* DatabaseController–RewardSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseController–RewardSystem.swift"; sourceTree = "<group>"; };
+		1423EF6727ED4E830094C85F /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
 		1429E2C226FD49DA00B5F4BC /* Smart Andover.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Smart Andover.entitlements"; sourceTree = "<group>"; };
 		1429E2C326FD4E8400B5F4BC /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		1429E2C72700329F00B5F4BC /* RequiredField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredField.swift; sourceTree = "<group>"; };
@@ -96,7 +109,6 @@
 		144371B2275546F5008CC4C0 /* AdminScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminScannerView.swift; sourceTree = "<group>"; };
 		1450819F26E53BD600B0A4FA /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		145081A126E7E7F600B0A4FA /* SmartModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartModelData.swift; sourceTree = "<group>"; };
-		145081A526E8447900B0A4FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		145081A826E84C3C00B0A4FA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		145081AA26E8532300B0A4FA /* DatabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
 		145081AC26E8598800B0A4FA /* ImageToJPEG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageToJPEG.swift; sourceTree = "<group>"; };
@@ -122,17 +134,18 @@
 		1494F1D6271F9F3B00A74C7B /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		149636AD26C8857E0076F5B2 /* AlertButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertButton.swift; sourceTree = "<group>"; };
 		149636B526C995870076F5B2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		14A0FF9227ED6547008AB26C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		14A3F51527089EFD008B5732 /* SmartSlideShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartSlideShow.swift; sourceTree = "<group>"; };
-		14A3F51727089F6A008B5732 /* RewardsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsList.swift; sourceTree = "<group>"; };
+		14A3F51727089F6A008B5732 /* RewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsView.swift; sourceTree = "<group>"; };
 		14A3F5192708CC36008B5732 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		14B8DD1226EF012600DE379B /* FunFactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactsView.swift; sourceTree = "<group>"; };
 		14B8DD1426EF01C300DE379B /* FunFactsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactsData.swift; sourceTree = "<group>"; };
 		14B8DD1726EF05CB00DE379B /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		14B8DD5426F2ACC900DE379B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14B8DD5826F2AF4100DE379B /* Authority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authority.swift; sourceTree = "<group>"; };
-		14B8DD5C26F2BC6400DE379B /* PhotoHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoHandling.swift; sourceTree = "<group>"; };
+		14B8DD5C26F2BC6400DE379B /* DatabaseController–PhotoHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseController–PhotoHandling.swift"; sourceTree = "<group>"; };
 		14B8DD6626F50C9100DE379B /* AdminInspectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminInspectionView.swift; sourceTree = "<group>"; };
-		14BB39092790BA7A003C227E /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
+		14BB39092790BA7A003C227E /* AdminSubmissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSubmissionsView.swift; sourceTree = "<group>"; };
 		14BF565726C99EA2004C85FF /* ActionSheetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetButton.swift; sourceTree = "<group>"; };
 		14BF565926C9A148004C85FF /* PhotoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureView.swift; sourceTree = "<group>"; };
 		94648E67275842E6D24FB7EE /* libPods-Smart Andover.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Smart Andover.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1423EF4D27E9502C0094C85F /* CodeScanner in Frameworks */,
 				4BDC0901B7A9423DB0A66999 /* libPods-Smart Andover.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +180,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1404869A27B5A03700787CC0 /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				14A3F51727089F6A008B5732 /* RewardsView.swift */,
+				1404869B27B5A0B000787CC0 /* RewardPreview.swift */,
+				1404869D27B5A0C300787CC0 /* RewardDetailsView.swift */,
+			);
+			path = Rewards;
+			sourceTree = "<group>";
+		};
 		142B68E826E3EEE000A465F7 /* SmartView */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,14 +210,6 @@
 			path = Leaderboard;
 			sourceTree = "<group>";
 		};
-		144371B127554680008CC4C0 /* OrderScanner */ = {
-			isa = PBXGroup;
-			children = (
-				144371B2275546F5008CC4C0 /* AdminScannerView.swift */,
-			);
-			path = OrderScanner;
-			sourceTree = "<group>";
-		};
 		145081A726E84C3200B0A4FA /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,9 +222,11 @@
 		145081AE26E9CB4A00B0A4FA /* Admin */ = {
 			isa = PBXGroup;
 			children = (
-				14BB39092790BA7A003C227E /* AdminView.swift */,
+				1423EF6727ED4E830094C85F /* AdminView.swift */,
+				14BB39092790BA7A003C227E /* AdminSubmissionsView.swift */,
 				14B8DD6626F50C9100DE379B /* AdminInspectionView.swift */,
-				144371B127554680008CC4C0 /* OrderScanner */,
+				1404869F27B622D600787CC0 /* AdminRewardAddition.swift */,
+				144371B2275546F5008CC4C0 /* AdminScannerView.swift */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -275,7 +293,7 @@
 			children = (
 				1429E2C226FD49DA00B5F4BC /* Smart Andover.entitlements */,
 				149396FB26C53E6700F70883 /* Info.plist */,
-				145081A526E8447900B0A4FA /* GoogleService-Info.plist */,
+				14A0FF9227ED6547008AB26C /* GoogleService-Info.plist */,
 				149396F626C53E6700F70883 /* Assets.xcassets */,
 				149396F226C53E6400F70883 /* SmartAndoverApp.swift */,
 				1431AAFB26CAD6AB0073456F /* FirstLaunch.swift */,
@@ -310,7 +328,9 @@
 			isa = PBXGroup;
 			children = (
 				145081AA26E8532300B0A4FA /* DatabaseController.swift */,
-				14B8DD5C26F2BC6400DE379B /* PhotoHandling.swift */,
+				1423EF4E27E950F60094C85F /* DatabaseController–Authorization.swift */,
+				1423EF5027E9512F0094C85F /* DatabaseController–RewardSystem.swift */,
+				14B8DD5C26F2BC6400DE379B /* DatabaseController–PhotoHandling.swift */,
 				145081AC26E8598800B0A4FA /* ImageToJPEG.swift */,
 			);
 			path = Database;
@@ -329,9 +349,9 @@
 			isa = PBXGroup;
 			children = (
 				145A0BDF26C5DA8A00E91B46 /* HomeView.swift */,
-				14A3F51727089F6A008B5732 /* RewardsList.swift */,
 				14BF565926C9A148004C85FF /* PhotoCaptureView.swift */,
 				14368DDC26C84F4B0017398E /* ProgressViewStyle.swift */,
+				1404869A27B5A03700787CC0 /* Rewards */,
 				142B68E826E3EEE000A465F7 /* SmartView */,
 				14CCCB4C26EB07C900FE1471 /* FunFacts */,
 			);
@@ -401,6 +421,9 @@
 			dependencies = (
 			);
 			name = "Smart Andover";
+			packageProductDependencies = (
+				1423EF4C27E9502C0094C85F /* CodeScanner */,
+			);
 			productName = "Smart Andover";
 			productReference = 149396EF26C53E6400F70883 /* Smart Andover.app */;
 			productType = "com.apple.product-type.application";
@@ -472,6 +495,9 @@
 				Base,
 			);
 			mainGroup = 149396E626C53E6400F70883;
+			packageReferences = (
+				1423EF4B27E9502C0094C85F /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 149396F026C53E6400F70883 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -488,9 +514,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				145081A626E8447900B0A4FA /* GoogleService-Info.plist in Resources */,
 				14B8DD5526F2ACC900DE379B /* LaunchScreen.storyboard in Resources */,
 				149396F726C53E6700F70883 /* Assets.xcassets in Resources */,
+				14A0FF9327ED6547008AB26C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,25 +591,30 @@
 				145081A226E7E7F600B0A4FA /* SmartModelData.swift in Sources */,
 				145081A026E53BD600B0A4FA /* CurrentUser.swift in Sources */,
 				1494F1D7271F9F3B00A74C7B /* ChatBubble.swift in Sources */,
+				1404869E27B5A0C300787CC0 /* RewardDetailsView.swift in Sources */,
 				14B8DD6726F50C9100DE379B /* AdminInspectionView.swift in Sources */,
 				145A0BEB26C7A2F300E91B46 /* BarButtonStyle.swift in Sources */,
 				1431AB1526D60C4B0073456F /* LeaderboardView.swift in Sources */,
 				145081AD26E8598800B0A4FA /* ImageToJPEG.swift in Sources */,
+				1423EF5127E9512F0094C85F /* DatabaseController–RewardSystem.swift in Sources */,
 				149396F526C53E6400F70883 /* MasterView.swift in Sources */,
 				149636B626C995870076F5B2 /* ProfileView.swift in Sources */,
-				14BB390A2790BA7A003C227E /* AdminView.swift in Sources */,
+				14BB390A2790BA7A003C227E /* AdminSubmissionsView.swift in Sources */,
 				145A0BE326C6F4B100E91B46 /* User.swift in Sources */,
 				14368DDD26C84F4B0017398E /* ProgressViewStyle.swift in Sources */,
+				1404869C27B5A0B000787CC0 /* RewardPreview.swift in Sources */,
 				145C629B27332006009ADBC0 /* Reward.swift in Sources */,
 				145CA4CC270CA2C500302963 /* NavigationPages.swift in Sources */,
 				145081A926E84C3C00B0A4FA /* LoginView.swift in Sources */,
+				140486A027B622D600787CC0 /* AdminRewardAddition.swift in Sources */,
 				145C62A127333712009ADBC0 /* ProfileSubmissionsView.swift in Sources */,
 				145A0BE926C7861200E91B46 /* TabLink.swift in Sources */,
 				14B8DD5926F2AF4100DE379B /* Authority.swift in Sources */,
+				1423EF4F27E950F60094C85F /* DatabaseController–Authorization.swift in Sources */,
 				14368DDB26C847D60017398E /* BubbleStyle.swift in Sources */,
 				14BF565826C99EA2004C85FF /* ActionSheetButton.swift in Sources */,
 				14A3F51A2708CC36008B5732 /* Colors.swift in Sources */,
-				14A3F51827089F6A008B5732 /* RewardsList.swift in Sources */,
+				14A3F51827089F6A008B5732 /* RewardsView.swift in Sources */,
 				14A3F51627089EFD008B5732 /* SmartSlideShow.swift in Sources */,
 				1431AAF626C9F9340073456F /* FadingScrollView.swift in Sources */,
 				147AAA5826F65541008F4E4F /* PhotoDocument.swift in Sources */,
@@ -596,7 +627,8 @@
 				145C62A32733379C009ADBC0 /* ProfileOrdersView.swift in Sources */,
 				1431AAFC26CAD6AB0073456F /* FirstLaunch.swift in Sources */,
 				1429E2C426FD4E8400B5F4BC /* Keychain.swift in Sources */,
-				14B8DD5D26F2BC6400DE379B /* PhotoHandling.swift in Sources */,
+				1423EF6827ED4E830094C85F /* AdminView.swift in Sources */,
+				14B8DD5D26F2BC6400DE379B /* DatabaseController–PhotoHandling.swift in Sources */,
 				142D42D5270BD33D00DBDCAB /* NavigationMenuView.swift in Sources */,
 				1431AAFE26CAD84E0073456F /* SmartAndoverLogo.swift in Sources */,
 				145C62992733150D009ADBC0 /* LeaderboardLeaderItemView.swift in Sources */,
@@ -762,8 +794,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Smart Andover/Smart Andover.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K4ZMXMC2TC;
+				DEVELOPMENT_TEAM = B9WW4QJQK8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Smart Andover/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -787,8 +820,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Smart Andover/Smart Andover.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K4ZMXMC2TC;
+				DEVELOPMENT_TEAM = B9WW4QJQK8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Smart Andover/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -928,6 +962,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1423EF4B27E9502C0094C85F /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1423EF4C27E9502C0094C85F /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1423EF4B27E9502C0094C85F /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 149396E726C53E6400F70883 /* Project object */;
 }

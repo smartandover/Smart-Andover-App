@@ -11,6 +11,8 @@ extension UserDefaults {
     
     static func IsFirstLaunch () -> Bool {
         
+        return false
+        
         let hasLaunchedFlag = "AppHasLaunched#Flag"
         let hasLaunched = UserDefaults.standard.bool(forKey: hasLaunchedFlag)
         

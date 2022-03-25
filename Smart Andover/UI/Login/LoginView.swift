@@ -252,7 +252,7 @@ struct LoginView: View {
                 }
                 else {
                     do { try Keychain.updateCredentials(newEmail: email, newPassword: password) }
-                    catch { print(error) }
+                    catch { print("Error updating credentials") }
                 }
             }
             

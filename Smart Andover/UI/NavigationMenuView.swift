@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NavigationMenuView: View {
     
-    @Environment(\.currentUser) var user
+    @Environment(\.currentUser) private var user
     @Binding var currentPage: NavigationPages
     @Binding var isShowing: Bool
     
@@ -23,17 +23,17 @@ struct NavigationMenuView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()
             
-            Label("\(user.wrappedValue!.firstName) \(user.wrappedValue!.lastName)", systemImage: "person.circle.fill")
-                .font(.headline.bold())
-                .foregroundColor(.theme)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding()
-                .onTapGesture {
-                        currentPage = .profile
-                        isShowing = false
-                }
-            
-            Divider()
+//            Label("\(user.wrappedValue!.firstName) \(user.wrappedValue!.lastName)", systemImage: "person.circle.fill")
+//                .font(.headline.bold())
+//                .foregroundColor(.theme)
+//                .frame(maxWidth: .infinity, alignment: .leading)
+//                .padding()
+//                .onTapGesture {
+//                        currentPage = .profile
+//                        isShowing = false
+//                }
+//
+//            Divider()
             
             ForEach(NavigationPages.allCases, id: \.self) { page in
                 
@@ -63,6 +63,7 @@ struct NavigationMenuView: View {
                             user.wrappedValue = nil
                             isShowing = false
                             currentPage = .home
+                            try! Keychain.deleteCredentials(completion: nil)
                 
                         }))
                 .frame(maxWidth: .infinity, alignment: .leading)

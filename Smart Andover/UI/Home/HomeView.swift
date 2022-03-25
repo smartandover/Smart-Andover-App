@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @Environment(\.currentUser) var user
+    @Environment(\.currentUser) private var user
     @State private var showImageSelector = false
     
     var body: some View {

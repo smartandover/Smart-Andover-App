@@ -14,9 +14,17 @@ struct ImagePicker: UIViewControllerRepresentable {
     @Binding var image: UIImage?
     
     let imageSource: UIImagePickerController.SourceType
+    let allowsEditing: Bool
+    
+    init (isShown: Binding<Bool>, image: Binding<UIImage?>, imageSource: UIImagePickerController.SourceType, allowsEditing: Bool = false) {
+        _isShown = isShown
+        _image = image
+        self.imageSource = imageSource
+        self.allowsEditing = allowsEditing
+    }
     
     func makeCoordinator() -> Coordinator {
-        return ImagePicker.Coordinator(isShown: $isShown, image: $image)
+        return ImagePicker.Coordinator(isShown: $isShown, image: $image, allowsEditing: allowsEditing)
     }
     
     func makeUIViewController(context: Context) -> UIImagePickerController {
@@ -25,7 +33,7 @@ struct ImagePicker: UIViewControllerRepresentable {
         
         vc.sourceType = imageSource
         vc.delegate = context.coordinator
-        vc.allowsEditing = false
+        vc.allowsEditing = allowsEditing
         
         return vc
         
@@ -45,16 +53,19 @@ extension ImagePicker {
         @Binding var isShown: Bool
         @Binding var image: UIImage?
         
-        init (isShown: Binding<Bool>, image: Binding<UIImage?>) {
+        let allowsEditing: Bool
+        
+        init (isShown: Binding<Bool>, image: Binding<UIImage?>, allowsEditing: Bool) {
             _isShown = isShown
             _image = image
+            self.allowsEditing = allowsEditing
         }
         
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             
             // If allowsEditing = true, use the .editedImage key, otherwise .originalImage
             
-            image = info[.originalImage] as? UIImage
+            image = info[allowsEditing ? .editedImage : .originalImage] as? UIImage
             isShown = false
             
         }

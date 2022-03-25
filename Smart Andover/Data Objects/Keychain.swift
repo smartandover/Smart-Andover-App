@@ -98,4 +98,18 @@ class Keychain {
         
     }
     
+    static func deleteCredentials (completion: (() -> Void)? = nil) throws {
+        
+        let query: [String: Any] = [
+            kSecAttrServer as String: server,
+            kSecClass as String: kSecClassInternetPassword,
+        ]
+        
+        let status = SecItemDelete(query as CFDictionary)
+        guard status == errSecSuccess || status == errSecItemNotFound else { throw KeychainError.unhandledError(status: status) }
+        
+        completion?()
+        
+    }
+    
 }

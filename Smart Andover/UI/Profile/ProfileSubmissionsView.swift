@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ProfileSubmissionsView: View {
     
-    @Environment(\.currentUser) var user
+    @Environment(\.currentUser) private var user
     @State private var submittedPhotos: [ResolvedPhotoDocument]?
     
     var body: some View {
         
-        if let submittedPhotos = submittedPhotos {
+        if let submittedPhotos = submittedPhotos, submittedPhotos.count > 0 {
             
             TabView {
                 
@@ -56,6 +56,27 @@ struct ProfileSubmissionsView: View {
             }
             .frame(height: 300)
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+            
+        }
+        
+        else if submittedPhotos != nil {
+            
+            VStack {
+                
+                Image(systemName: "photo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundColor(.themeLight)
+                    .padding()
+                
+                Text("Looks like none of your submissions have been reviewed so far. Try sending some through the Home page!")
+                    .foregroundColor(.themeDark)
+                    .font(.system(size: 15, weight: .light, design: .rounded))
+                    .multilineTextAlignment(.center)
+                
+            }
+            .padding().padding()
+            .frame(height: 300)
             
         }
         

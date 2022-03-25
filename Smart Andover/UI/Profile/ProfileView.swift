@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    @Environment(\.currentUser) var user
+    @Environment(\.currentUser) private var user
     
     var body: some View {
         
@@ -49,6 +49,21 @@ struct ProfileView: View {
                     .padding(.leading)
                 
                 ProfileOrdersView()
+                
+                Divider()
+                    .padding(.vertical)
+                
+                AlertButton(label: Label("Logout", systemImage: "power"),
+                            title: Text("Are you sure you want to logout?"),
+                            primaryButton: .cancel(),
+                            secondaryButton: .default(Text("Logout"), action: {
+                    
+                                user.wrappedValue = nil
+                                try! Keychain.deleteCredentials(completion: nil)
+                    
+                            }))
+                    .frame(maxWidth: .infinity, alignment: .center)
+                    .foregroundColor(.red)
                 
                 Spacer(minLength: 100)
             

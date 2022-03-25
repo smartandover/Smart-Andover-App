@@ -13,6 +13,14 @@ extension Color {
         return Color(UIColor.systemBackground)
     }
     
+    static var lightGray: Color {
+        return Color(UIColor.lightGray)
+    }
+    
+    static var darkGray: Color {
+        return Color(UIColor.darkGray)
+    }
+    
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     
     static var themeLight: Color {

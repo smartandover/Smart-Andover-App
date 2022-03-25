@@ -7,14 +7,32 @@
 
 import SwiftUI
 
-struct Coupon: Hashable {
+struct Coupon: Hashable, Identifiable {
     
-    let reward: String
-    let orderID: String
+    ///The order ID of the coupon.
+    let id: String
+    ///The email of the user who holds this coupon.
+    let buyer: String
+    ///The date this coupon was bought.
+    let dateOrdered: Date
+    ///The amount of points used to redeem this coupon.
+    let pointsUsed: Int
+    ///The reward associated with this coupon.
+    let reward: Reward
     
-    var QRData: Data {
+    ///Image data (PNG format) for the QR code associated with the coupon's ID.
+    let QRData: Data
+    
+    init (id: String, buyer: String, dateOrdered: Date, pointsUsed: Int, reward: Reward) {
         
-        let data = orderID.data(using: String.Encoding.ascii)
+        self.id = id
+        self.buyer = buyer
+        self.dateOrdered = dateOrdered
+        self.pointsUsed = pointsUsed
+        self.reward = reward
+        
+        
+        let data = id.data(using: String.Encoding.ascii)
         
         let generator = CIFilter(name: "CIQRCodeGenerator")!
         
@@ -23,7 +41,7 @@ struct Coupon: Hashable {
         let transform = CGAffineTransform(scaleX: 3, y: 3)
         let qrImage = generator.outputImage!.transformed(by: transform)
         
-        return UIImage(ciImage: qrImage).pngData()!
+        self.QRData = UIImage(ciImage: qrImage).pngData()!
         
     }
     

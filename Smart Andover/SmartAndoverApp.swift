@@ -11,9 +11,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
-        UIScrollView.appearance().bounces = true
-        
         DatabaseController.configure()
+        UIScrollView.appearance().bounces = true
         
         return true
         
@@ -30,7 +29,6 @@ struct SmartAndoverApp: App {
     //For logo animation in login/register view
     @Namespace var namespace
     
-    @State var showMenu: Bool = false
     @State var currentPage: NavigationPages = .home
     
     @State var keychainLoaded: Bool = false
@@ -62,17 +60,6 @@ struct SmartAndoverApp: App {
                         
                         Spacer()
                         
-                        Image(systemName: "text.justify")
-                            .font(.title3.bold())
-                            .foregroundColor(.themeDark)
-                            .transition(.opacity)
-                            .animation(.easeOut(duration: 0.3))
-                            .rotationEffect(.degrees(showMenu ? -270: 0), anchor: .center)
-                            .onTapGesture {
-                                withAnimation {
-                                    showMenu.toggle()
-                                }
-                            }
                         
                     }
                     .frame(height: 50)
@@ -82,40 +69,7 @@ struct SmartAndoverApp: App {
                     
                     ZStack {
                         
-                        switch currentPage {
-                        
-                        case .home:
-                            HomeView()
-                            
-                        case .leaderboard:
-                            LeaderboardView()
-                            
-                        case .authorized:
-                            AdminView()
-                                .background(Color.themeLight)
-                            
-                        case .profile:
-                            ProfileView()
-                            
-                        default:
-                            EmptyView()
-                            
-                        }
-                        
-                        BlurView()
-                            .opacity(showMenu ? 1 : 0)
-                            .ignoresSafeArea()
-                            .onTapGesture {
-                                withAnimation {
-                                    showMenu = false
-                                }
-                            }
-                        
-                        NavigationMenuView(currentPage: $currentPage.animation(), isShowing: $showMenu.animation())
-                            .foregroundColor(.themeDark)
-                            .background(Color.themeLight.ignoresSafeArea())
-                            .animation(.easeInOut)
-                            .offset(x: showMenu ? 100 : UIScreen.main.bounds.width)
+                        MasterView(selectedTab: $currentPage)
                         
                     }
                         
